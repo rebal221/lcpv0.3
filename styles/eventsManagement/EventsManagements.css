@@ -1,0 +1,149 @@
+.dx-scheduler-work-space-month .dx-scheduler-date-table-cell {
+  border: 0.5px solid #e1e1e1 !important;
+  position: relative;
+}
+
+.dx-scheduler-work-space-month {
+  background-color: blue;
+  .dx-scheduler-date-table-cell .dx-scheduler-date-table-cell-text {
+    position: absolute;
+    top: 0;
+    border-radius: 20px;
+    padding: 0px 3px;
+    right: 0;
+  }
+}
+
+.disable-date,
+.dinner {
+  height: 100%;
+  width: 100%;
+}
+
+.disable-date {
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgb(151 147 147 / 10%),
+    rgb(167 165 165 / 10%) 4px,
+    transparent 4px,
+    transparent 9px
+  );
+  color: #676666;
+}
+
+.dx-scheduler-header-panel-cell .disable-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* .dinner {
+  background: rgba(255, 193, 7, 0.2);
+} */
+
+.dx-scheduler-time-panel-cell .dinner {
+  color: rgba(255, 193, 7);
+  font-weight: 400;
+  background: transparent;
+}
+
+.dx-draggable {
+  cursor: auto;
+}
+
+.dx-scheduler-date-table-cell {
+  padding: 0;
+  opacity: 1;
+}
+
+/* 
+
+.react-calendar__navigation {
+  background: var(--bs-primary);
+}
+
+
+.react-calendar__month-view__days button {
+      border: 1px solid var(--bs-primary);
+}
+
+.react-calendar__month-view__days {
+    padding-bottom: 0px!important;
+}
+
+.react-calendar__month-view__weekdays {
+  background: #fff!important
+}
+
+
+.react-calendar__tile:disabled { 
+   background: #fff!important
+}
+
+
+.react-calendar__month-view__days button{ 
+   background: #fff!important
+}
+
+
+.react-calendar__month-view__days button:hover {
+      font-size: 30px;
+   background: #fff!important
+}
+
+.react-calendar__month-view__days abbr {
+  border: unset!important
+}
+
+
+.react-calendar__tile:disabled {
+  background-color: rgba(255, 68, 102, 0.05);
+ color: #F46;
+}
+
+.highlight  {
+    background-color: #fff;
+color: var(--bs-primary);
+}
+
+
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  background-color: #F4F7FA!important;
+} */
+
+.hours-grid-item {
+  /* max-height: 550px; */
+  max-height: 95% !important;
+  width: 76% !important;
+}
+
+.hoursBoxTitle {
+  margin-bottom: 2rem !important;
+  border-radius: 15px !important;
+  background: var(--bs-primary);
+}
+
+.configContainer {
+  width: 100% !important;
+  height: 30rem !important;
+  border-radius: 15px;
+}
+
+.scrollhostNormalView {
+  padding-top: 22px;
+}
+
+.box-class {
+  color: #535353;
+  min-height: 12%;
+  width: 90% !important;
+  background-color: #f4f7fa;
+  margin-bottom: 12px !important;
+  border-radius: 10px !important;
+}
+
+.box-class > button > p {
+  font-weight: 500 !important;
+  font-size: 20px !important;
+}

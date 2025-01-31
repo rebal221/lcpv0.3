@@ -1,0 +1,27 @@
+.phoneNumberComponent {
+  .PhoneInput {
+    /* padding: 15px; */
+    .PhoneInputCountry {
+      background-color: var(--mui-palette-grey-A100);
+      border-radius: var(--bs-border-radius-lg);
+      padding: 10px;
+      margin-inline-end: 10px;
+    }
+
+    > input {
+      padding: 7px;
+      outline: 0;
+      border-radius: var(--bs-border-radius-lg);
+      min-height: 45px;
+
+      background-color: transparent;
+
+      border: 1px solid var(--bs-border-color);
+    }
+  }
+}
+[data-bs-theme="dark"] {
+  .phoneNumberComponent .PhoneInputCountry {
+    background-color: var(--mui-palette-grey-600) !important;
+  }
+}

@@ -1,0 +1,18 @@
+/* .paperQRCoDE-entered {
+    transform: translateY(0);
+    opacity: 1 !important;
+}
+
+.paperQRCoDE-exiting {
+    opacity: 0;
+} */
+
+.paperQRCoDE {
+    border-radius: 10px !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 17px 25px -5px, rgba(0, 0, 0, 0.04) 0px -4px 10px -5px;
+    z-index: 3;
+    .MuiPaper-root {
+        background-color: var(--mui-palette-common-background) !important;
+        box-shadow: none
+    }
+}

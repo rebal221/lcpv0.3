@@ -1,0 +1,63 @@
+:root {
+  --accordion-head-font-size: 1.25em;
+  --accordion-color: #232528;
+  --accordion-head-bg: #f1f5f9;
+}
+
+[data-bs-theme="dark"] {
+  --accordion-head-bg: #191b1d;
+  --accordion-color: #f5f7f8;
+}
+
+.panel-heading {
+  cursor: pointer;
+}
+
+.panel-body.hidden {
+  display: none;
+}
+
+.toggle-icon {
+  float: right;
+}
+
+.accordion-header {
+  color: white;
+  padding: 1rem 1.5rem;
+  background: var(--accordion-head-bg);
+  border: none;
+  border-radius: var(--bs-border-radius-lg) !important;
+
+  .card-title {
+    color: var(--accordion-color);
+    font-size: var(--accordion-head-font-size);
+  }
+}
+
+.accordion-header .formio-collapse-icon {
+  color: var(--accordion-color) !important;
+  font-size: var(--accordion-head-font-size) !important;
+}
+
+.accordion-collapse {
+  display: none;
+}
+
+.accordion-collapse.show {
+  display: block;
+}
+
+.accordion-content {
+  /* animation: slidein 0.2s; */
+  border: none;
+}
+
+@keyframes slidein {
+  from {
+    transform: scaleY(0);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}

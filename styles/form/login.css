@@ -1,0 +1,234 @@
+.popUpContainerDialogLogin {
+      .MuiFormControl-root{
+        .MuiFormHelperText-root {
+            color: var(--mui-palette-error-light);
+            margin-inline: 0px;
+            text-align: start;
+
+        }
+     }
+    .MuiTextField-root .MuiInputBase-root {
+        border-radius: var(--bs-border-radius-lg);
+        height: 45px;
+        border: var(--bs-border-width) solid var(--bs-border-color);
+
+     
+
+        .MuiInputAdornment-root {
+            .MuiIconButton-root {
+                color: var(--bs-primary);
+                font-size: 16px;
+
+            }
+        }
+    }
+    .MuiDialogContent-root {
+        overflow:hidden;
+    }
+    .ResendBtnGrid{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .resendOTP{
+           >p {
+        color: var(--input-label-color) !important;
+        font-size: 14px !important;
+        margin-bottom: 4px;
+
+      
+    }
+    }
+input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+        height: 80%;
+        padding: 2px 14px;
+        margin: 0;
+
+    }
+    .label {
+        color: var(--input-label-color) !important;
+        font-size: 14px !important;
+        margin-bottom: 4px;
+
+        .MuiFormLabel-asterisk {
+            color: var(--mui-palette-error-light);
+
+            font-size: .875em;
+            margin-bottom: 4px;
+        }
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+        border: 0;
+        border-color: "transparent";
+    }
+
+    .MuiDialog-container .MuiPaper-root {
+        border-radius: var(--bs-border-radius-lg);
+    }
+
+    .closeBox {
+        display: flex;
+        justify-content: end;
+    }
+
+    .otpInput {
+        display: flex;
+        align-items: center;
+
+        width: 3em !important;
+        border: none;
+        outline: none;
+        position: relative;
+        font-size: 18px !important;
+        background: none;
+        border-bottom: 1px solid var(--bs-primary) !important;
+
+        margin-inline: 8px;
+
+        >input {
+
+            width: 3em !important;
+            border: none;
+            outline: none;
+            position: relative;
+            font-size: 18px !important;
+            background: none;
+            border-bottom: 1px solid var(--bs-primary) !important;
+
+            margin-inline: 8px;
+        }
+    }
+}
+
+
+
+.customLogin {
+    .qrCode {
+        width: 90%;
+        height: 500px !important;
+    }
+
+    .label {
+        color: var(--input-label-color) !important;
+        font-size: 14px !important;
+        margin-bottom: 4px;
+
+        .MuiFormLabel-asterisk {
+             color: var(--mui-palette-error-light);
+            font-size: .875em;
+
+        }
+    }
+    
+    .errorPass {
+        color: var(--mui-palette-error-light);
+            font-size: .875em;
+    }
+
+    .LoginFormHeader {
+        >p {
+            font-size: 18px;
+            font-weight: 600
+        }
+    }
+
+    .uaePassGrid {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .uaePassBtnLogin {
+        width: 400px;
+      
+        background-color: transparent;
+        border: none !important;
+
+        >img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .customLoginForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+    .AdGrid{
+      width:100%
+     }
+     .MuiFormControl-root{
+        .MuiFormHelperText-root {
+            color: var(--mui-palette-error-light);
+            margin-inline: 0px;
+            text-align: start;
+
+        }
+     }
+    .MuiTextField-root .MuiInputBase-root {
+        border-radius: var(--bs-border-radius-lg);
+        height: 45px;
+        border: var(--bs-border-width) solid var(--bs-border-color);
+        margin-bottom: 8px;
+
+   
+       
+
+        .MuiInputAdornment-root {
+            .MuiIconButton-root {
+                color: var(--bs-primary);
+                font-size: 16px;
+            }
+        }
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+        border: 0;
+        border-color: "transparent";
+    }
+
+    .forgotPAss {
+        color: var(--bs-primary);
+        cursor: pointer;
+        display: flex;
+        border: none !important;
+        background-color: transparent;
+        font-size: 14px;
+        align-items: start !important;
+        font-weight: 400;
+        justify-content: start !important;
+        text-decoration: underline;
+    }
+
+    .signInBtn {
+        color: var(--bs-primary);
+        cursor: pointer;
+        display: flex;
+        border: none !important;
+        background-color: transparent;
+        font-size: 14px;
+        align-items: start !important;
+        font-weight: 400;
+        justify-content: start !important;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+        height: 80%;
+        padding: 2px 14px;
+        margin: 0;
+
+    }
+}

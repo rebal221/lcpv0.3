@@ -1,0 +1,27 @@
+.notFoundContent {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_div {
+    min-width: 50rem;
+    min-height: 20rem;
+    max-width: 50rem;
+    border: 1px solid var(--bs-primary);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .main_div {
+        text-align: center;
+        min-width: 5rem !important;
+        width: 100% !important;
+    }
+}

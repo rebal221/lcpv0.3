@@ -1,0 +1,508 @@
+.Event-root {
+  /* display: flex;
+  flex-direction: row; */
+  max-width: 300px;
+  margin: auto;
+  /* height: 200px; */
+  border: 1px solid #ccc;
+  /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
+  width: -webkit-fill-available;
+}
+
+.Event-meeting-card {
+  flex: 1;
+  border-radius: 20px !important;
+  background-color: #fff;
+  margin: 10px;
+  position: relative;
+  overflow: unset !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  /* max-width: -webkit-fill-available;
+  min-width: 200px; */
+  /* min-width: 325px !important; */
+  max-width: -webkit-fill-available;
+  width: 100% !important;
+
+  /* max-height: 290px; */
+
+  --border-angle: 0turn;
+
+  border: 1px solid #d6daea;
+  border-radius: 2em;
+  --gradient-border: conic-gradient(
+    from var(--border-angle),
+    transparent,
+    #91d48a,
+    transparent 30%
+  );
+
+  background: var(--gradient-border) border-box;
+
+  background-position: center center;
+
+  animation: bg-spin 4s linear infinite;
+}
+
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+.Event-active-meeting {
+  background: unset;
+
+  animation: none;
+  padding: 0;
+}
+
+.Event-meeting-card-container {
+  border-radius: 20px !important;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.Event-meeting-card222::before {
+  content: "";
+  position: absolute;
+  /* top: -119px;
+  left: -65px; */
+  width: 200%;
+  height: 200%;
+  border-radius: 8px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 0;
+  background-image: conic-gradient(transparent, #91d48a, transparent 30%);
+  animation: moveBorder 4s linear infinite;
+}
+
+@keyframes moveBorder {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.Event-icon-container {
+  font-size: 12px !important;
+  color: #292d32 !important;
+  display: flex;
+}
+
+.Event-icon-default {
+  margin-right: 2px;
+}
+
+.Event-text-ar {
+  direction: rtl;
+}
+
+.Event-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.Event-meeting-id {
+  display: flex;
+  align-items: center;
+}
+
+.Event-status-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.Event-meeting-status {
+  font-weight: bold;
+}
+
+.Event-card-body {
+  padding: 15px;
+}
+
+.Event-meeting-info {
+  display: flex;
+  align-items: center;
+  padding: 7px 0;
+}
+
+/* .meeting-info i {
+  margin-right: 10px;
+} */
+
+.Event-participant-tag {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+.Event-card-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.Event-join-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+.Event-join-button:hover {
+  background-color: #0056b3;
+}
+
+.Event-participant {
+  position: relative !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #eaebf0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: #323438;
+  margin: 0 4px;
+  /* Adjust the margin as needed */
+}
+
+.Event-animate-green {
+  animation: pulse-green 2s infinite linear;
+}
+
+@keyframes pulse-green {
+  0% {
+    box-shadow:
+      0 0 0 0 rgba(145, 212, 138, 0.7),
+      0 0 0 0 rgba(145, 212, 138, 0.5),
+      0 0 0 0 rgba(145, 212, 138, 0.3);
+  }
+
+  100% {
+    box-shadow:
+      0 0 0 8px rgba(145, 212, 138, 0),
+      0 0 0 8px rgba(145, 212, 138, 0),
+      0 0 0 10px rgba(145, 212, 138, 0);
+  }
+}
+
+.Event-animate-yellow {
+  animation: pulse-yallow 2s infinite linear;
+}
+
+@keyframes pulse-yallow {
+  0% {
+    box-shadow:
+      0 0 0 0 rgba(239, 246, 37, 0.7),
+      0 0 0 0 rgba(252, 249, 62, 0.94),
+      0 0 0 0 rgba(211, 212, 138, 0.3);
+  }
+
+  100% {
+    box-shadow:
+      0 0 0 8px rgba(212, 207, 138, 0),
+      0 0 0 8px rgba(208, 212, 138, 0),
+      0 0 0 10px rgba(212, 206, 138, 0);
+  }
+}
+
+.Event-participant-initials {
+  position: relative;
+  z-index: 1;
+}
+
+.Event-commonFlex1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Event-commonFlex {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.Event-cardTitle {
+  font-weight: bold !important;
+  font-size: 16px !important;
+  color: #323438;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 16px;
+}
+
+.Event-cardTextDetails {
+  font-size: 14px !important;
+  color: #292d32 !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Event-cardAction {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.Event-cardActionWithTilte {
+  font-weight: 500;
+  font-size: 16px !important;
+  line-height: 17.78px;
+  color: #fff;
+}
+
+.Event-cardAction button {
+  width: 50%;
+}
+
+.Event-cardAction button:hover {
+  background-color: unset;
+}
+
+.Event-top-ribbon {
+  background: #28a745;
+  color: #fff;
+  position: absolute;
+  left: -10px;
+  border-radius: 10px 20px 20px 0;
+  z-index: 2;
+  font-size: 11px;
+  padding: 8px 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px 0px #00000021;
+}
+
+.Event-top-ribbon-rtl {
+  right: -10px;
+  left: unset;
+  border-radius: 20px 10px 0px 20px;
+}
+
+.Event-top-ribbon:after {
+  position: absolute;
+  left: -6px;
+  top: 30px;
+  bottom: 0;
+  /* z-index: 9999; */
+  content: "";
+  border-top: 0px solid #28a745;
+  border-right: 10px solid #28a745;
+  border-left: 6px solid transparent;
+  border-bottom: 9px solid transparent;
+  width: 15px;
+  height: 2px;
+}
+
+.Event-top-ribbon-rtl:after {
+  right: -6px;
+  left: unset;
+  border-left: 10px solid #28a745;
+  border-right: 6px solid transparent;
+}
+
+.Event-cardIcon {
+  display: flex;
+  min-width: 30px;
+  color: #292d32;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.Event-divider {
+  opacity: 0.3;
+  display: block;
+  height: 1px;
+  border: none !important;
+  background: linear-gradient(
+    270deg,
+    rgba(121, 123, 132, 0) 0%,
+    #797b84 49.55%,
+    rgba(121, 123, 132, 0) 100%
+  );
+}
+
+.Event-card {
+  border-radius: 20px;
+  border-color: rgba(214, 218, 234, 1);
+  border-style: solid;
+  border-width: 1px;
+  background-color: #fdfdfd;
+  display: flex;
+  max-width: 714px;
+  /* padding: theme.spacing(0, 2); */
+  gap: 20;
+}
+.Event-cardContent {
+  flex: 1 1 auto;
+}
+
+.Event-avatar {
+  /* width: ;
+    height: 
+    margin-right: theme.spacing(2); */
+  background-color: #eaebf0;
+}
+
+.Event-buttonCard {
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  /* padding: theme.spacing(1.5, 3); */
+  cursor: pointer;
+  /* color: theme.palette.primary.main; */
+  /* "&.primary": {
+      color: #fdfdfd;
+      background-color: theme.palette.primary.main;
+    }, */
+}
+
+.EventJustification-BoxInfo {
+  /* margin-top: 20px; */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.EventJustification-BoxInfo label {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.EventJustification-BoxInfo input {
+  color: rgba(0, 0, 0, 0.65);
+  border-bottom: 1px solid #fff;
+  margin-right: 0px;
+  font-size: 12px;
+}
+
+.EventJustification-BoxInfo.MuiFormHelperText-root {
+  color: rgb(211, 47, 47);
+}
+
+.EventJustification-Button {
+  text-transform: none !important;
+  color: white !important;
+  border-radius: 4px !important;
+  padding: 10px 20px !important;
+  font-size: 16px !important;
+  /* border: none !important; */
+  cursor: pointer !important;
+  outline: none !important;
+}
+.EventJustification-Button:hover {
+  background-color: white !important;
+}
+
+.CallReschedule-description {
+  border: 3px solid red;
+}
+
+.CallReschedule-sectionFirstGrid {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.CallReschedule-badgeBoxDescription {
+  margin: 5px 0px 20px 0px !important;
+  grid-template-columns: 110px 1fr !important;
+}
+
+@media (max-width: 600px) {
+  .badgeBoxDescription {
+    grid-template-columns: 95px 1fr !important;
+    border-bottom-color: #d1a65154 !important;
+    width: -webkit-fill-available !important;
+  }
+}
+
+.badgeBoxDescription .MuiInputBase-input {
+  font-size: 14px;
+}
+
+.CallReschedule-badgeBoxDescription input {
+  border-bottom: 0.5px solid;
+  border-bottom-color: #d1a65154 !important;
+  width: -webkit-fill-available !important;
+}
+
+.CallReschedule-badgeBoxDate {
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.CallReschedule-badgeBoxDate {
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.DateTimePickerField-rootMainCalender {
+  display: flex;
+  width: 100%;
+}
+
+.DateTimePickerField-rootMainCalender input {
+  font-size: 14px !important;
+}
+
+.DateTimePickerField-formControl {
+  /* margin-top: theme.spacing(2); */
+  min-width: 220px;
+}
+
+.DateTimePickerField-dateTimePicker {
+  width: 220;
+}
+
+.inviteButton {
+  text-transform: none !important;
+  background-color: #4caf50 !important;
+  color: white !important;
+  border-radius: 4px !important;
+  padding: 10px 20px !important;
+  font-size: 16px !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+.inviteButton:hover {
+  color: #4caf50 !important;
+  background-color: white !important;
+  border: 2px solid #4caf50 !important;
+}

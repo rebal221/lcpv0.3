@@ -1,0 +1,9 @@
+.DefaultGallery{
+       position: relative;
+    .image-gallery-nav{
+        position: absolute;
+        z-index: 2;
+        padding: 0;
+
+    }
+}

@@ -1,0 +1,177 @@
+.scrollhost::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollhost-container {
+  position: relative;
+  height: 100%;
+}
+.scrollhost {
+  overflow: auto;
+  height: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  position: relative;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.configContainer {
+  width: 100%;
+  /* background: #CFA45142; */
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 614px;
+  overflow: scroll;
+  box-shadow: 0px 4px 6.1px 0px rgba(0, 0, 0, 0.1);
+}
+.scrollhostNormalView {
+  /* overflow: auto; */
+  width: 90%;
+  height: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  position: relative;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+.hoursBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.alignAvailableHours {
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+}
+.hoursBoxTitle {
+  background: #cfa451;
+  width: 100%;
+  height: auto;
+  min-height: 66px;
+  max-height: 66px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & p {
+    color: #fff;
+    font-family: Montserrat, "poppins", "IBMPlexSans", "Helvetica", "Arial",
+      sans-serif;
+    font-size: 16px;
+  }
+}
+.scrollhostResponseve {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  margin-top: 20px;
+  grid-row-gap: 5px;
+  max-height: 100px;
+}
+@media (max-width: 400px) {
+  .scrollhostResponseve {
+    grid-template-columns: 33% 34% 33% !important;
+  }
+}
+
+.scroll-bar {
+  width: 5px;
+  height: 100%;
+  left: 0;
+  top: 0px;
+  position: absolute;
+  border-radius: 7px;
+  bottom: 0px;
+  background-color: #f3f3f3;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  z-index: 999;
+}
+
+.scroll-thumb {
+  width: 5px;
+  height: 20px;
+  margin-left: 1px;
+  position: absolute;
+  border-radius: 7px;
+  opacity: 1;
+  top: 0;
+  background-color: #cfa451;
+  border: 1px solid #cfa451;
+}
+
+.responsive-box-class {
+  margin-inline-end: 5px;
+  border: 1px solid;
+  border-radius: 25px;
+  color: rgb(255, 255, 255);
+  background: rgb(164, 139, 94);
+}
+.responsive-box-class button {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.box-class {
+  margin-inline-start: 15px;
+  margin-bottom: 5px;
+  border: 1px solid;
+  border-radius: 25px;
+  color: #08a45c;
+  background-color: #fff;
+  min-height: 34px;
+  width: 122px;
+  white-space: nowrap;
+  & button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 !important;
+  }
+
+  & p {
+    margin-bottom: 0px !important;
+    margin-top: 2px !important;
+    color: #151515;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+}
+.custom-button {
+  width: 100%;
+  max-width: 100%;
+  font-size: 15px !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+@media (max-width: 400px) {
+  .custom-button {
+    font-size: 10px !important;
+    padding-top: 12px !important;
+  }
+}
+
+.selected {
+  background-color: #cfa451;
+  border: 0;
+  & button > p {
+    color: #fff;
+  }
+}

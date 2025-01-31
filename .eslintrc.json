@@ -1,0 +1,127 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "standard-with-typescript",
+    "next",
+    "prettier"
+  ],
+  "overrides": [
+    {
+      "files": ["pages/**/arrows.js"],
+      "rules": {
+        "react/display-name": "off"
+      }
+    }
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["react"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    // Disable all rules
+    "comma-spacing": "off",
+    "@typescript-eslint/comma-spacing": "off",
+    "dot-notation": "off",
+    "@typescript-eslint/dot-notation": "off",
+    "eqeqeq": "off",
+    "indent": "off",
+    "@typescript-eslint/indent": "off",
+    "key-spacing": "off",
+    "@typescript-eslint/key-spacing": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/space-before-function-paren": "off",
+    "@typescript-eslint/consistent-type-imports": "off",
+    "@typescript-eslint/comma-dangle": "off",
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/quotes": "off",
+    "@typescript-eslint/member-delimiter-style": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@next/next/no-img-element": "off",
+    "react/jsx-key": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "react-hooks/rules-of-hooks": "off",
+    "@typescript-eslint/restrict-plus-operands": "off",
+    "no-template-curly-in-string": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "@typescript-eslint/prefer-optional-chain": "off",
+    "jsx-a11y/alt-text": "off",
+    "@typescript-eslint/restrict-template-expressions": "off",
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "@typescript-eslint/no-confusing-void-expression": "off",
+    "@typescript-eslint/no-unused-expressions": "off",
+    "multiline-ternary": "off",
+    "no-useless-escape": "off",
+    "@typescript-eslint/ban-types": "off",
+    "array-callback-return": "off",
+    "@typescript-eslint/triple-slash-reference": "off",
+    "import/no-duplicates": "off",
+    "@next/next/no-sync-scripts": "off",
+    "no-mixed-operators": "off",
+    "@next/next/no-html-link-for-pages": "off",
+    "@typescript-eslint/brace-style": "off",
+    "@typescript-eslint/no-redeclare": "off",
+    "no-var": "off",
+    "no-sequences": "off",
+    "no-lone-blocks": "off",
+    "no-multiple-empty-lines": "off",
+    "space-in-parens": "off",
+    "no-multi-spaces": "off",
+    "@typescript-eslint/no-misused-promises": "off",
+    "no-trailing-spaces": "off",
+    "no-unneeded-ternary": "off",
+    "object-curly-spacing": "off",
+    "@typescript-eslint/space-before-blocks": "off",
+    "@typescript-eslint/type-annotation-spacing": "off",
+    "@typescript-eslint/object-curly-spacing": "off",
+    "object-shorthand": "off",
+    "@typescript-eslint/promise-function-async": "off",
+    "@typescript-eslint/quote-props": "off",
+    "semi": "off",
+    "@typescript-eslint/semi": "off",
+    "@typescript-eslint/space-infix-ops": "off",
+    "prefer-const": "off",
+    "eol-last": "off",
+    "padded-blocks": "off",
+    "arrow-spacing": "off",
+    "block-spacing": "off",
+    "operator-linebreak": "off",
+    "object-curly-newline": "off",
+    "quote-props": "off",
+    "@typescript-eslint/keyword-spacing": "off",
+    "comma-style": "off",
+    "SafeNumber | undefined": "off",
+    "MODULE_NOT_FOUND": "off",
+    "semi-spacing": "off",
+    "no-self-assign": "off",
+    "@typescript-eslint/array-type": "off",
+    "spaced-comment": "off",
+    "react/no-unescaped-entities": "off",
+    "array-bracket-spacing": "off",
+    "@typescript-eslint/no-unnecessary-type-assertion": "off",
+    "no-return-assign": "off",
+    "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
+    "object-property-newline": "off",
+    "no-empty": "off",
+    "quotes": "off",
+    "@typescript-eslint/prefer-includes": "off",
+    "@typescript-eslint/no-base-to-string": "off",
+    "@next/next/next-script-for-ga": "off",
+    "n/handle-callback-err": "off"
+  }
+}

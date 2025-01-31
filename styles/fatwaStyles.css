@@ -1,0 +1,25 @@
+.btn-primary {
+  --bs-btn-border-radius: var(--bs-border-radius-2xl);
+}
+
+.btn-outline-primary {
+  --bs-btn-bg: var(--mui-palette-primary-light);
+  --bs-btn-border-color: var(--mui-palette-primary-light);
+  --bs-btn-border-radius: var(--bs-border-radius-2xl);
+}
+
+.btn-outline-secondary {
+  --bs-btn-bg: var(--bs-body-bg);
+  --bs-btn-border-color: var(--mui-palette-secondary-light);
+  --bs-btn-hover-color: var(--mui-palette-secondary-main);
+  --bs-btn-hover-border-color: var(--mui-palette-secondary-light);
+  --bs-btn-hover-bg: var(--mui-palette-secondary-light);
+  --bs-btn-active-color: var(--mui-palette-secondary-main);
+  --bs-btn-active-bg: var(--mui-palette-secondary-light);
+  --bs-btn-active-border-color: var(--mui-palette-secondary-light);
+}
+[data-bs-theme="dark"] {
+  .btn-outline-secondary {
+    --bs-btn-color: var(--bs-body-color);
+  }
+}

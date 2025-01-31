@@ -1,0 +1,51 @@
+.addFilterPopup_title {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+  padding: 0 5px;
+}
+.addFilterPopup_addBox {
+  display: flex;
+  margin-top: 5px;
+}
+
+.addFilterPopup_icon {
+  cursor: pointer;
+}
+
+.addFilterPopup_iconBox {
+  background-color: rgba(20, 159, 74, 0.15);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.addFilterPopup_icon {
+  color: #149f4a;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.addFilterPopup_text {
+  margin: 3px 5px !important;
+  font-size: 12px;
+}
+
+.addFilterPopup_button {
+  color: #fff !important;
+  border-radius: 10px !important;
+}
+.addFilterPopup_submit {
+  background-color: var(--mui-palette-primary-main) !important;
+}
+.addFilterPopup_cancel {
+  color: var(--mui-palette-warning-main) !important;
+  border-color: var(--mui-palette-warning-main) !important;
+}
+.addFilterPopup_error {
+  color: var(--mui-palette-error-main) !important;
+  border-color: var(--mui-palette-error-main) !important;
+}

@@ -1,0 +1,13 @@
+.ck-content {
+  min-height: 150px;
+  resize: vertical;
+  font-family: var(--bs-font-sans-serif);
+}
+
+.justifyEditor {
+  .ck-content {
+    text-align: justify !important;
+    resize: vertical;
+    font-family: var(--bs-font-sans-serif);
+  }
+}

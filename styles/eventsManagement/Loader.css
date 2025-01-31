@@ -1,0 +1,99 @@
+.LoaderContainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoaderRing {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.LoaderRing::before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  animation: LoaderRing 2s linear infinite;
+}
+
+@keyframes LoaderRing {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 0px 5px 5px #ff2121;
+  }
+
+  25% {
+    transform: rotate(90deg);
+    box-shadow: 0px 5px 5px #fffb21;
+  }
+
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 0px 5px 5px #21c0ff;
+  }
+
+  75% {
+    transform: rotate(270deg);
+    box-shadow: 0px 5px 5px #bc21ff;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 0px 5px 5px #ff2121;
+  }
+}
+
+/* 
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 0px 5px 5px #1aff1a;
+  }
+  25% {
+    transform: rotate(90deg);
+    box-shadow: 0px 5px 5px #33ff33;
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 0px 5px 5px #00cc00;
+  }
+  75% {
+    transform: rotate(270deg);
+    box-shadow: 0px 5px 5px #008000;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 0px 5px 5px #1aff1a;
+  }
+} */
+
+.success-signal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.success-signal :hover {
+  color: green;
+}
+
+/* Error signal styles */
+.error-signal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  /* Red color for error signal */
+  font-size: 2rem;
+}

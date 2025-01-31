@@ -1,0 +1,67 @@
+.custom_share_Btn {
+    width: 40px !important;
+    min-width: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+
+    cursor: pointer !important;
+    position: relative !important;
+    justify-content: center !important;
+    height: 40px !important;
+    background-color: var(--mui-palette-grey-100) !important;
+    border: none !important;
+
+    border-radius: var(--bs-border-radius-2xl) !important;
+    color: var(--mui-palette-primary-main) !important;
+
+    >i {
+        color: var(--mui-palette-primary-main) !important;
+    }
+
+}
+
+.custom_share_Btn:hover {
+    background-color: var(--mui-palette-primary-main) !important;
+    border: none !important;
+    color: var(--bs-btn-hover-color) !important;
+}
+
+.custom_share_Btn:hover>i {
+    color: var(--bs-btn-hover-color) !important;
+}
+
+
+.paperShare-entered {
+    transform: translateY(0);
+    opacity: 1 !important;
+}
+
+.paperShare-exiting {
+    opacity: 0;
+}
+
+.paperShare {
+    border-radius: 10px !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 17px 25px -5px, rgba(0, 0, 0, 0.04) 0px -4px 10px -5px;
+    z-index: 3;
+    .MuiPaper-root {
+        background-color: var(--mui-palette-common-background) !important;
+
+        >ul>li {
+            width: 30px;
+            border: none;
+            height: 30px;
+            display: flex;
+            background: none;
+            margin-bottom: 10px;
+            margin-inline: 7px;
+            padding-inline: 1px;
+            justify-content: center;
+            color: var(--mui-palette-primary-main) !important;
+
+            >button {
+                width: 100%
+            }
+        }
+    }
+}

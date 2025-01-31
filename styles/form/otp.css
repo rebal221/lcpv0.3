@@ -1,0 +1,29 @@
+.otpComponent {
+    .otpInput {
+        display: flex;
+        align-items: center;
+
+        width: 3em !important;
+        border: none;
+        outline: none;
+        position: relative;
+        font-size: 18px !important;
+        background: none;
+
+        border-bottom: 1px solid var(--bs-primary) !important;
+        margin-inline: 8px;
+
+        >input {
+
+            width: 3em !important;
+            border: none;
+            outline: none;
+            position: relative;
+            font-size: 18px !important;
+            background: none;
+
+            border-bottom: 1px solid var(--bs-primary) !important;
+            margin-inline: 8px;
+        }
+    }
+}
